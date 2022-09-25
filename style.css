@@ -101,9 +101,11 @@ body {
 
 .item--unread .item__desc::after {
 	content: url(./assets/images/icon-unread.svg);
+
 	/* Get the SVG to appear inline with the neighbouring text */
 	display: inline-block;
 	vertical-align: middle;
+
 	/* Prevent the SVG from increasing the line-height */
 	position: absolute;
 }
