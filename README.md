@@ -29,7 +29,17 @@ Users should be able to:
 - HTML
 - CSS (BEM)
 - JS
+- [MediaModifier Online SVG Editor](https://mediamodifier.com/free-svg-editor)
 
 ### What I learned
 
-
+- CSS
+  - Using BEM methodology decreases the reliance on the specific HTML tag you use. This makes it easy to add semantic HTML afterwards if you screw up, and generally makes it easier to add element containers later if required
+  - If you put an SVG alongside text, you can vertically align it with the text using:
+    ```
+    /* Get the SVG to appear inline with the neighbouring text */
+    display: inline-block;
+    vertical-align: middle;
+    ```
+  - A good CSS reset is hosted here [https://meyerweb.com/eric/tools/css/reset/](https://meyerweb.com/eric/tools/css/reset/)
+- Go through the design assets before you start to figure out what you need to make yourself. It took me a while to realise that the unread icon wasn't included in the assets
