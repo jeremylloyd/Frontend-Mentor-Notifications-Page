@@ -62,6 +62,10 @@ table {
   --theme-red: hsl(1, 90%, 64%);
 }
 
+::selection {
+	background: var(--theme-lightblue);
+}
+
 .item {
 	display: flex;
 	align-items: flex-start;
@@ -95,6 +99,8 @@ table {
 	/* Get the SVG to appear inline with the neighbouring text */
 	display: inline-block;
 	vertical-align: middle;
+	/* Prevent the SVG from increasing the line-height */
+	position: absolute;
 }
 
 .item__details {
