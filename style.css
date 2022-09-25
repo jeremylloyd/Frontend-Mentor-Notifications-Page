@@ -57,11 +57,92 @@ table {
   --theme-red: hsl(1, 90%, 64%);
 }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
+* {
+	/* For debugging layout */
+	/* border: dashed red 1px !important; */
 }
 
-.attribution a {
-  color: hsl(228, 45%, 44%);
+.item {
+
+}
+
+.item__avatar {
+
+}
+
+.item__desc {
+
+}
+
+.item__details {
+
+}
+
+.item__dt {
+
+}
+
+.item__group {
+
+}
+
+.item__img {
+
+}
+
+.item__person {
+
+}
+
+.item__post {
+
+}
+
+.item__preview {
+
+}
+
+.panel {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--theme-verylightblue);
+	font-family: 'Plus Jakarta Sans';
+	padding: 15px;
+}
+
+.panel__clear {
+	margin-left: auto;
+	background: none;
+	border: none;
+	font-family: 'Plus Jakarta Sans';
+	font-size: 0.9rem;
+	color: var(--theme-darkblue);
+	cursor: pointer;
+	padding: 0.25rem 0;
+}
+
+.panel__counter {
+	background-color: var(--theme-blue);
+	color: var(--theme-verylightblue);
+	font-size: 0.8rem;
+	font-weight: 800;
+	padding: 0.3rem 0.6rem;
+	/* padding: 1rem 6rem; */
+	border-radius: 0.4rem;
+}
+
+.panel__header {
+	display: flex;
+	align-items: center;
+	padding: 0.2rem 0;
+	gap: 0.5rem;
+}
+
+.panel__items {
+
+}
+
+.panel__title {
+	font-size: 1.25rem;
+	font-weight: 800;
 }
