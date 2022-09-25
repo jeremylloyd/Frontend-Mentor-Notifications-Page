@@ -57,57 +57,113 @@ table {
   --theme-red: hsl(1, 90%, 64%);
 }
 
-* {
-	/* For debugging layout */
-	/* border: dashed red 1px !important; */
+.item {
+	display: flex;
+	align-items: flex-start;
+	font-size: 0.9rem;
+	line-height: 1.1rem;
+	border-radius: 0.25rem;
+	padding: 1rem;
+	gap: 0.75rem;
 }
 
-.item {
-
+.item--unread {
+	background-color: var(--theme-verylightblue);
 }
 
 .item__avatar {
-
+	max-width: 2.5rem;
+	cursor: pointer;
 }
 
 .item__desc {
+	color: var(--theme-darkblue);
+}
 
+.item--unread .item__desc::after {
+	content: url(./assets/images/icon-unread.svg);
+	/* Get the SVG to appear inline with the neighbouring text */
+	display: inline-block;
+	vertical-align: middle;
 }
 
 .item__details {
-
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
 }
 
 .item__dt {
-
+	color: var(--theme-greyblue);
 }
 
 .item__group {
+	font-weight: 800;
+	color: var(--theme-darkblue);
+	cursor: pointer;
+}
 
+.item__group:hover {
+	color: var(--theme-blue);
 }
 
 .item__img {
+	max-width: 2.5rem;
+	cursor: pointer;
+	margin-left: auto;
+}
 
+.item__img > img {
+	max-width: 100%;
 }
 
 .item__person {
+	font-weight: 800;
+	color: var(--theme-darkerblue);
+	cursor: pointer;
+}
 
+.item__person:hover {
+	color: var(--theme-blue);
+}
+
+.item__person::after, .item__group::before, .item__post::before {
+	content: " ";
+	white-space: pre;
 }
 
 .item__post {
+	color: var(--theme-darkblue);
+	font-weight: 800;
+	cursor: pointer;
+}
 
+.item__post:hover {
+	color: var(--theme-blue);
 }
 
 .item__preview {
+	color: var(--theme-darkblue);
+	border: solid 1px var(--theme-lightblue);
+	margin: 0.5rem 0px;
+	padding: 1rem;
+	cursor: pointer;
+	text-decoration: none;
+	border-radius: 0.5rem;
+	transition: background-color 100ms;
+}
 
+.item__preview:hover {
+	background-color: var(--theme-lightblue);
 }
 
 .panel {
 	display: flex;
 	flex-direction: column;
-	background-color: var(--theme-verylightblue);
+	background-color: white;
 	font-family: 'Plus Jakarta Sans';
 	padding: 15px;
+	gap: 20px;
 }
 
 .panel__clear {
@@ -119,6 +175,10 @@ table {
 	color: var(--theme-darkblue);
 	cursor: pointer;
 	padding: 0.25rem 0;
+}
+
+.panel__clear:hover {
+	color: var(--theme-blue);
 }
 
 .panel__counter {
@@ -139,7 +199,9 @@ table {
 }
 
 .panel__items {
-
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
 }
 
 .panel__title {
