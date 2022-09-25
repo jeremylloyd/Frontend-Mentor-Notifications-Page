@@ -8,6 +8,7 @@ for (i = 0; i < unread.length; i++) {
 function readItem(item) {
   item.classList.remove("item--unread");
   item.removeEventListener("click", readItemIfNonanchorClicked);
+  updateCounter();
 }
 
 function readItemIfNonanchorClicked(event) {
@@ -23,4 +24,9 @@ function readAllItems() {
   for (i = 0; i < unread.length; i++) {
     readItem(unread[i]);
   }
+}
+
+function updateCounter() {
+  counter = document.querySelector(".panel__counter");
+  counter.innerHTML = document.querySelectorAll(".item--unread").length;
 }
