@@ -42,4 +42,12 @@ Users should be able to:
     vertical-align: middle;
     ```
   - A good CSS reset is hosted here [https://meyerweb.com/eric/tools/css/reset/](https://meyerweb.com/eric/tools/css/reset/)
+  - Overwrite the background colour of any selections using:
+    ```
+    ::selection {
+      background: var(--theme-lightblue);
+    }
+    ```
+- JS
+  - Detect exactly what the user is clicking on in the `onclick` event using `event.target` and `event.target.parentNode` in the eventListener
 - Go through the design assets before you start to figure out what you need to make yourself. It took me a while to realise that the unread icon wasn't included in the assets
