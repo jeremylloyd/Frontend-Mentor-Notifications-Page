@@ -46,6 +46,11 @@ table {
 
 /*  */
 
+@font-face {
+	font-family: 'Plus Jakarta Sans';
+	src: url(./assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
 :root {
   --theme-verylightblue: hsl(210, 60%, 98%);
   --theme-lighterblue: hsl(211, 68%, 94%);
